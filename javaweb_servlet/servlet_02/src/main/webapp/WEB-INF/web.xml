@@ -51,7 +51,7 @@
     <servlet-name>dispatcher</servlet-name>
     <url-pattern>/s4</url-pattern>
   </servlet-mapping>
-  
+
   <servlet>
     <servlet-name>properties</servlet-name>
     <servlet-class>com.bo.day02.PropertyDemoServlet</servlet-class>
