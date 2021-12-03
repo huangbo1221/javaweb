@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>servlet_01</module>
+        <module>servlet_02</module>
     </modules>
 
     <properties>
