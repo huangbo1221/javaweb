@@ -11,11 +11,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习使用HttpServletResponse下载文件">
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/ImageServlet.java" afterDir="false" />
+    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习使用java实现网页验证码">
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/RedirectServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/RequestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/webapp/success.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servlet_03/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_03/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_03/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_03/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -331,7 +341,7 @@
       <updated>1638457416344</updated>
       <workItem from="1638457417787" duration="3216000" />
       <workItem from="1638531811368" duration="9452000" />
-      <workItem from="1638624541940" duration="2171000" />
+      <workItem from="1638624541940" duration="5294000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>
@@ -354,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638541607847</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="学习使用java实现网页验证码">
+      <created>1638626767570</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638626767570</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +394,7 @@
     <MESSAGE value="初识servlet" />
     <MESSAGE value="学习ServletContext的基本使用方式" />
     <MESSAGE value="学习使用HttpServletResponse下载文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习使用HttpServletResponse下载文件" />
+    <MESSAGE value="学习使用java实现网页验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习使用java实现网页验证码" />
   </component>
 </project>
