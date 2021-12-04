@@ -20,5 +20,13 @@
     <url-pattern>/down</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>imageservlet</servlet-name>
+    <servlet-class>com.bo.day02.ImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>imageservlet</servlet-name>
+    <url-pattern>/img</url-pattern>
+  </servlet-mapping>
   
 </web-app>
