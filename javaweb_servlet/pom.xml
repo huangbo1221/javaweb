@@ -13,6 +13,7 @@
         <module>servlet_02</module>
         <module>servlet_03</module>
         <module>servlet_04</module>
+        <module>servlet_05</module>
     </modules>
 
     <properties>

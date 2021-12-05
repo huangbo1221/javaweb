@@ -1,0 +1,62 @@
+# cookie和session
+一个网站，怎么证明你来过？
+客户端   服务端
+1、服务端给客户端一个“信件”，客户端下次访问服务端带上“信件”就可以了。 cookie
+2、服务器登记你来过了，下次你来的时候服务器来匹配你。 session
+
+## 保存会话的两种技术
+cookie：
+* 客户端技术（相应、请求）
+
+session：
+* 服务器技术，利用这个技术，可以保存用户的会话信息。我们可以把信息或者数据放在session中。
+
+常见场景：网站登录之后，你下次不用再登录了，第二次访问直接就可以登录上去了。
+
+## cookie
+1、从请求中拿到cookie信息；
+2、服务器相应给客户端cookie。
+
+在CookieDemoServlet的例子中，当第一在浏览器执行http://localhost:8080/s5/cookie1时，
+效果如下：
+
+![img.png](img.png)
+
+可见，第一次访问并没有“上一次登录时间”。
+当再次执行http://localhost:8080/s5/cookie1时，效果如下：
+
+![img_1.png](img_1.png)
+
+有了“您上一次访问的时间是”的记录
+
+当关掉浏览器，再次打开浏览器并执行http://localhost:8080/s5/cookie1时，效果如下：
+
+![img_2.png](img_2.png)
+
+仍是没有“上一次登录时间”。
+
+完整代码如下：
+
+![img_3.png](img_3.png)
+
+当在代码中设置了cookie的最大失效时间时，在访问过http://localhost:8080/s5/cookie1后，即使关掉浏览器再次打开浏览器
+并执行http://localhost:8080/s5/cookie1，效果如下：
+
+![img_4.png](img_4.png)
+
+代码如下：
+
+![img_5.png](img_5.png)
+
+这说明，即使浏览器关闭了，针对cookie设置的一天失效时间仍会生效！！！关掉浏览器并再次打开浏览器，
+然后访问http://localhost:8080/s5/cookie1，仍会传递未失效的lastLoginTime！
+
+cookie：在本机电脑上也会存在大量的cookie文件，一般会存在本地用户下的appData文件夹里。
+
+## cookie是否会有限制？
+* 一个cookie只能保存一个信息
+* cookie大小有限制，不能超过4kb
+
+## 删除cookie
+* 不设置有效期，关闭浏览器，自动失效；
+* 设置有效时间为0。可以让该cookie立刻失效！
