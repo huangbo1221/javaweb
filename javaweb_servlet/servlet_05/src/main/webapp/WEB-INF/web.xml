@@ -19,4 +19,36 @@
     <servlet-name>cookiedemo1</servlet-name>
     <url-pattern>/cookie1</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sessiontest1</servlet-name>
+    <servlet-class>com.bo.day03.SessionDemoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sessiontest1</servlet-name>
+    <url-pattern>/se1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sessiontest2</servlet-name>
+    <servlet-class>com.bo.day03.SessionDemo2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sessiontest2</servlet-name>
+    <url-pattern>/se2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sessiontest3</servlet-name>
+    <servlet-class>com.bo.day03.SessionDemo3Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sessiontest3</servlet-name>
+    <url-pattern>/se3</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <!--  表示session在1分钟后自动注销  -->
+    <session-timeout>1</session-timeout>
+  </session-config>
 </web-app>

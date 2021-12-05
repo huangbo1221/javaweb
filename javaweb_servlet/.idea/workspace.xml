@@ -13,24 +13,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习HttpServletRequest的获取参数和转发能力">
-      <change afterPath="$PROJECT_DIR$/servlet_05/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/CookieDemoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习cookie的使用方法">
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/SessionDemo2Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/SessionDemo3Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/SessionDemoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/pojo/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_05/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_05/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +367,7 @@
       <workItem from="1638624541940" duration="6377000" />
       <workItem from="1638698509143" duration="3694000" />
       <workItem from="1638702253816" duration="100000" />
-      <workItem from="1638702368707" duration="5954000" />
+      <workItem from="1638702368707" duration="9633000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>
@@ -407,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638701839618</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="学习cookie的使用方法">
+      <created>1638711639327</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638711639327</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,6 +444,7 @@
     <MESSAGE value="学习使用java实现网页验证码" />
     <MESSAGE value="学习使用提交表单--&gt;重定向--&gt;显示成功" />
     <MESSAGE value="学习HttpServletRequest的获取参数和转发能力" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习HttpServletRequest的获取参数和转发能力" />
+    <MESSAGE value="学习cookie的使用方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习cookie的使用方法" />
   </component>
 </project>
