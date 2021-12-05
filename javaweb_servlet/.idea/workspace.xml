@@ -5,26 +5,30 @@
       <artifact name="servlet_01:war" />
       <artifact name="servlet_02:war" />
       <artifact name="servlet_03:war" />
+      <artifact name="servlet_04:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习使用java实现网页验证码">
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/RedirectServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/RequestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/java/com/bo/day02/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_03/src/main/webapp/success.jsp" afterDir="false" />
+    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习使用提交表单--&gt;重定向--&gt;显示成功">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/src/main/java/com/bo/day03/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/src/main/java/com/bo/day03/RequestTestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/src/main/java/com/bo/day03/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/src/main/java/com/bo/day03/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/src/main/java/com/bo/day03/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_04/src/main/webapp/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet_03/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_03/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet_03/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_03/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +96,18 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.52">
+    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tomcat 9" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 9.0.52" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -198,6 +214,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/s4" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="servlet_01:war">
@@ -213,6 +230,11 @@
         <artifact name="servlet_03:war">
           <settings>
             <option name="CONTEXT_PATH" value="/s3" />
+          </settings>
+        </artifact>
+        <artifact name="servlet_04:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/s4" />
           </settings>
         </artifact>
       </deployment>
@@ -311,19 +333,8 @@
           <artifact name="servlet_01:war" />
           <artifact name="servlet_02:war" />
           <artifact name="servlet_03:war" />
+          <artifact name="servlet_04:war" />
         </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -341,7 +352,8 @@
       <updated>1638457416344</updated>
       <workItem from="1638457417787" duration="3216000" />
       <workItem from="1638531811368" duration="9452000" />
-      <workItem from="1638624541940" duration="5294000" />
+      <workItem from="1638624541940" duration="6377000" />
+      <workItem from="1638698509143" duration="3240000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>
@@ -371,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638626767570</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="学习使用提交表单--&gt;重定向--&gt;显示成功">
+      <created>1638630555176</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638630555176</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +414,7 @@
     <MESSAGE value="学习ServletContext的基本使用方式" />
     <MESSAGE value="学习使用HttpServletResponse下载文件" />
     <MESSAGE value="学习使用java实现网页验证码" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习使用java实现网页验证码" />
+    <MESSAGE value="学习使用提交表单--&gt;重定向--&gt;显示成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习使用提交表单--&gt;重定向--&gt;显示成功" />
   </component>
 </project>
