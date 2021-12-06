@@ -7,34 +7,47 @@
       <artifact name="servlet_03:war" />
       <artifact name="servlet_04:war" />
       <artifact name="servlet_05:war" />
+      <artifact name="servlet_06:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习cookie的使用方法">
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/SessionDemo2Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/SessionDemo3Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/SessionDemoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/img_9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_05/src/main/java/pojo/Person.java" afterDir="false" />
+    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习session的使用方法">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/JspServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/webapp/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/webapp/hello2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_05/src/main/java/com/bo/day03/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet_05/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_05/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -90,11 +103,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/servlet_03/src/main/resources" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/servlet_06/src/main/webapp" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\javaweb\javaweb_servlet\servlet_06\src\main\webapp" />
       <recent name="D:\projects\javaweb\javaweb_servlet\servlet_03\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -102,18 +119,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.52">
-    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="tomcat 9" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 9.0.52" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -220,7 +225,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/s5" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/s6" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="servlet_01:war">
@@ -246,6 +251,11 @@
         <artifact name="servlet_05:war">
           <settings>
             <option name="CONTEXT_PATH" value="/s5" />
+          </settings>
+        </artifact>
+        <artifact name="servlet_06:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/s6" />
           </settings>
         </artifact>
       </deployment>
@@ -346,7 +356,20 @@
           <artifact name="servlet_03:war" />
           <artifact name="servlet_04:war" />
           <artifact name="servlet_05:war" />
+          <artifact name="servlet_06:war" />
         </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -367,7 +390,8 @@
       <workItem from="1638624541940" duration="6377000" />
       <workItem from="1638698509143" duration="3694000" />
       <workItem from="1638702253816" duration="100000" />
-      <workItem from="1638702368707" duration="9633000" />
+      <workItem from="1638702368707" duration="10420000" />
+      <workItem from="1638800326010" duration="3711000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>
@@ -418,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638711639327</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="学习session的使用方法">
+      <created>1638718702963</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638718702963</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,6 +476,7 @@
     <MESSAGE value="学习使用提交表单--&gt;重定向--&gt;显示成功" />
     <MESSAGE value="学习HttpServletRequest的获取参数和转发能力" />
     <MESSAGE value="学习cookie的使用方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习cookie的使用方法" />
+    <MESSAGE value="学习session的使用方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习session的使用方法" />
   </component>
 </project>
