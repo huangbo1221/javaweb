@@ -8,42 +8,31 @@
       <artifact name="servlet_04:war" />
       <artifact name="servlet_05:war" />
       <artifact name="servlet_06:war" />
+      <artifact name="servlet_07:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习session的使用方法">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/JspServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/java/com/bo/day04/img_9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/webapp/hello.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/webapp/hello2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_06/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习jsp的执行原理">
+      <change afterPath="$PROJECT_DIR$/servlet_07/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/errorjsp/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/errorjsp/500.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/img/404.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/img/500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -103,22 +92,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/servlet_06/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/servlet_07/src/main/webapp/errorjsp" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\javaweb\javaweb_servlet\servlet_07\src\main\resources\img" />
       <recent name="D:\projects\javaweb\javaweb_servlet\servlet_06\src\main\webapp" />
       <recent name="D:\projects\javaweb\javaweb_servlet\servlet_03\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\javaweb\javaweb_servlet\servlet_07\src\main\webapp" />
       <recent name="D:\projects\javaweb\javaweb_servlet\servlet_02\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.52">
+    <configuration name="index.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/s7/index.jsp">
+      <method v="2" />
+    </configuration>
     <configuration name="tomcat 9" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 9.0.52" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -225,8 +219,10 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/s6" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/s7" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
         <artifact name="servlet_01:war">
           <settings>
@@ -256,6 +252,11 @@
         <artifact name="servlet_06:war">
           <settings>
             <option name="CONTEXT_PATH" value="/s6" />
+          </settings>
+        </artifact>
+        <artifact name="servlet_07:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/s7" />
           </settings>
         </artifact>
       </deployment>
@@ -357,6 +358,7 @@
           <artifact name="servlet_04:war" />
           <artifact name="servlet_05:war" />
           <artifact name="servlet_06:war" />
+          <artifact name="servlet_07:war exploded" />
         </option>
       </method>
     </configuration>
@@ -373,9 +375,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.index.jsp" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
       <item itemvalue="TomEE Server.tomcat 9" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.jsp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -391,7 +399,11 @@
       <workItem from="1638698509143" duration="3694000" />
       <workItem from="1638702253816" duration="100000" />
       <workItem from="1638702368707" duration="10420000" />
-      <workItem from="1638800326010" duration="3711000" />
+      <workItem from="1638800326010" duration="5145000" />
+      <workItem from="1638886017618" duration="4273000" />
+      <workItem from="1638890495741" duration="108000" />
+      <workItem from="1638890615846" duration="8000" />
+      <workItem from="1638890638327" duration="1552000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>
@@ -449,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638718702963</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="学习jsp的执行原理">
+      <created>1638804165072</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638804165072</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,6 +496,7 @@
     <MESSAGE value="学习HttpServletRequest的获取参数和转发能力" />
     <MESSAGE value="学习cookie的使用方法" />
     <MESSAGE value="学习session的使用方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习session的使用方法" />
+    <MESSAGE value="学习jsp的执行原理" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习jsp的执行原理" />
   </component>
 </project>
