@@ -35,6 +35,7 @@
     }
 %>
 
+pageContext = ${pageContext.request.contextPath}
 
 </body>
 </html>

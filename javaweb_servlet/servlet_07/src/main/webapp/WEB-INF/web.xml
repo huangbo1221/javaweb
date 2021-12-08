@@ -11,11 +11,11 @@
     Welcome to Tomcat
   </description>
 
-  <error-page>
-    <error-code>404</error-code>
-    <location>/errorjsp/404.jsp</location>
-  </error-page>
-  <error-page>
-    <location>/errorjsp/500.jsp</location>
-  </error-page>
+<!--  <error-page>-->
+<!--    <error-code>404</error-code>-->
+<!--    <location>/errorjsp/404.jsp</location>-->
+<!--  </error-page>-->
+<!--  <error-page>-->
+<!--    <location>/errorjsp/500.jsp</location>-->
+<!--  </error-page>-->
 </web-app>

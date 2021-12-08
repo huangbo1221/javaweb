@@ -6,11 +6,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page errorPage="errorjsp/500.jsp" %>
 <html>
 <head>
-    <title>ttt</title>
+    <title>测试500界面</title>
 </head>
 <body>
-
+测试错误界面
+<%
+    int a = 1/0;
+%>
 </body>
 </html>

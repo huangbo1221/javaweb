@@ -15,28 +15,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习jsp的执行原理">
-      <change afterPath="$PROJECT_DIR$/servlet_07/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/errorjsp/404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/errorjsp/500.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/img/404.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/img/500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习jsp的指令">
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/img_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/common/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/common/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/label.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_07/src/main/java/com/bo/day05/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_07/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_07/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_07/src/main/webapp/errorjsp/500.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/errorjsp/500.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_07/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_07/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +99,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\javaweb\javaweb_servlet\servlet_07\src\main\webapp\errorjsp" />
       <recent name="D:\projects\javaweb\javaweb_servlet\servlet_07\src\main\resources\img" />
       <recent name="D:\projects\javaweb\javaweb_servlet\servlet_06\src\main\webapp" />
       <recent name="D:\projects\javaweb\javaweb_servlet\servlet_03\src\main\resources" />
@@ -403,7 +403,7 @@
       <workItem from="1638886017618" duration="4273000" />
       <workItem from="1638890495741" duration="108000" />
       <workItem from="1638890615846" duration="8000" />
-      <workItem from="1638890638327" duration="1552000" />
+      <workItem from="1638890638327" duration="3782000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>
@@ -468,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638804165072</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="学习jsp的指令">
+      <created>1638892235743</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638892235743</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,6 +504,7 @@
     <MESSAGE value="学习cookie的使用方法" />
     <MESSAGE value="学习session的使用方法" />
     <MESSAGE value="学习jsp的执行原理" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习jsp的执行原理" />
+    <MESSAGE value="学习jsp的指令" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习jsp的指令" />
   </component>
 </project>
