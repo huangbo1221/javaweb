@@ -16,6 +16,7 @@
         <module>servlet_05</module>
         <module>servlet_06</module>
         <module>servlet_07</module>
+        <module>servlet_08</module>
     </modules>
 
     <properties>
