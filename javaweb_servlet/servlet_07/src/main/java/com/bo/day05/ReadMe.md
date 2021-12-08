@@ -74,3 +74,41 @@ jsp配置如下：
 效果如下：
 
 ![img_14.png](img_14.png)
+
+## 九大内置对象
+* PageContext 存东西
+* Request 存东西
+* Response
+* Session 存东西
+* Application [ServletContext] 存东西
+* Config [ServletConfig]
+* out
+* page
+* Exception
+
+### 内置对象的存储
+代码如下：
+
+![img_15.png](img_15.png)
+
+结果如下：
+
+![img_16.png](img_16.png)
+
+那同一个会话的其他请求可以取到哪些值？
+代码如下：
+
+![img_17.png](img_17.png)
+
+结果如下：
+
+![img_18.png](img_18.png)
+
+只能取到session和application存储的值！！！
+
+当然作用域也可以手动指定，比如在pageContext赋的值，让其在其他会话的请求也可以取到，
+赋值时执行的方法为：
+```java
+// 也可通过执行后org.apache.jasper.runtime.PageContextImpl.setAttribute(java.lang.String, java.lang.Object, int)
+// 方法来指定其作用域
+```
