@@ -112,3 +112,26 @@ jsp配置如下：
 // 也可通过执行后org.apache.jasper.runtime.PageContextImpl.setAttribute(java.lang.String, java.lang.Object, int)
 // 方法来指定其作用域
 ```
+
+## JSP标签、JSTL标签、EL表达式
+### jsp标签
+代码如下：
+
+![img_19.png](img_19.png)
+
+效果如下：
+
+![img_20.png](img_20.png)
+
+### jstl标签
+代码如下：
+
+![img_21.png](img_21.png)
+
+效果分别如下：
+
+![img_22.png](img_22.png)
+
+![img_23.png](img_23.png)
+
+![img_24.png](img_24.png)
