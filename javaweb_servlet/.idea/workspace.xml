@@ -10,16 +10,39 @@
       <artifact name="servlet_06:war" />
       <artifact name="servlet_07:war exploded" />
       <artifact name="servlet_08:war" />
+      <artifact name="servlet_09:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习在jsp中使用javabean">
-      <change afterPath="$PROJECT_DIR$/servlet_08/src/main/java/MVC.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_08/src/main/java/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet_08/src/main/java/img_3.png" afterDir="false" />
+    <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习MVC三层架构">
+      <change afterPath="$PROJECT_DIR$/servlet_09/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/filter/CharacterEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/img_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/listener/HeadCountListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/java/com/huang/bo/servlet/TestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet_09/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" beforeDir="false" afterPath="$PROJECT_DIR$/servlet_01/target/servlet_01.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +226,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/s8" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/s9" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
@@ -246,6 +269,11 @@
         <artifact name="servlet_08:war">
           <settings>
             <option name="CONTEXT_PATH" value="/s8" />
+          </settings>
+        </artifact>
+        <artifact name="servlet_09:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/s9" />
           </settings>
         </artifact>
       </deployment>
@@ -349,6 +377,7 @@
           <artifact name="servlet_06:war" />
           <artifact name="servlet_07:war exploded" />
           <artifact name="servlet_08:war" />
+          <artifact name="servlet_09:war" />
         </option>
       </method>
     </configuration>
@@ -388,7 +417,9 @@
       <workItem from="1638886017618" duration="4273000" />
       <workItem from="1638890495741" duration="108000" />
       <workItem from="1638890615846" duration="8000" />
-      <workItem from="1638890638327" duration="14448000" />
+      <workItem from="1638890638327" duration="15625000" />
+      <workItem from="1639405181483" duration="90000" />
+      <workItem from="1639405396591" duration="4540000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>
@@ -488,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638975959359</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="学习MVC三层架构">
+      <created>1639403921362</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1639403921362</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,6 +560,7 @@
     <MESSAGE value="学习jsp的九大内置对象" />
     <MESSAGE value="学习使用jstl标签" />
     <MESSAGE value="学习在jsp中使用javabean" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习在jsp中使用javabean" />
+    <MESSAGE value="学习MVC三层架构" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习MVC三层架构" />
   </component>
 </project>
