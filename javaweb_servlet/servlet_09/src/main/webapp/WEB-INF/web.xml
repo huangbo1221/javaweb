@@ -23,6 +23,24 @@
     <servlet-name>hello</servlet-name>
     <url-pattern>/servlet/show</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loginservlet</servlet-name>
+    <servlet-class>com.huang.bo.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/servlet/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>logoutservlet</servlet-name>
+    <servlet-class>com.huang.bo.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logoutservlet</servlet-name>
+    <url-pattern>/servlet/logout</url-pattern>
+  </servlet-mapping>
 
   <filter>
     <filter-name>hellofilter</filter-name>
@@ -32,6 +50,15 @@
     <filter-name>hellofilter</filter-name>
     <!--  只要是/servlet的任何请求，都会经过这个过滤器  -->
     <url-pattern>/servlet/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>sysfilter</filter-name>
+    <filter-class>com.huang.bo.filter.SysFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>sysfilter</filter-name>
+    <url-pattern>/sys/*</url-pattern>
   </filter-mapping>
 
   <listener>
