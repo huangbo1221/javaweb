@@ -1,30 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="smbms:war" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4ffc19-f90d-4f49-8b9b-3b3b63d956c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb_servlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb_servlet/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0b4ffc19-f90d-4f49-8b9b-3b3b63d956c4" name="Changes" comment="学习从0开始搭建一个项目">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.len" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.values" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.values.at" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.values.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat_i" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat_i.len" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/huang/bo/pojo/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -40,6 +62,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -159,8 +182,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639668100248</updated>
-      <workItem from="1639668101426" duration="524000" />
+      <workItem from="1639668101426" duration="3517000" />
     </task>
+    <task id="LOCAL-00001" summary="学习从0开始搭建一个项目">
+      <created>1639668797268</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639668797268</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,5 +207,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="学习从0开始搭建一个项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习从0开始搭建一个项目" />
   </component>
 </project>
