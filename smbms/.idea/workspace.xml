@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4ffc19-f90d-4f49-8b9b-3b3b63d956c4" name="Changes" comment="学习从0开始搭建一个项目">
+    <list default="true" id="0b4ffc19-f90d-4f49-8b9b-3b3b63d956c4" name="Changes" comment="学习从0开始搭建一个项目，创建pojo模型的bill账单">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.len" afterDir="false" />
@@ -23,8 +25,15 @@
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huang/bo/pojo/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/huang/bo/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/huang/bo/pojo/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/huang/bo/pojo/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/huang/bo/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb_servlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb_servlet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadMe.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +75,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java_learning" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\javaweb\smbms\src\main\java\com\huang\bo\pojo" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -182,7 +197,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639668100248</updated>
-      <workItem from="1639668101426" duration="3517000" />
+      <workItem from="1639668101426" duration="3616000" />
+      <workItem from="1640008417721" duration="2531000" />
     </task>
     <task id="LOCAL-00001" summary="学习从0开始搭建一个项目">
       <created>1639668797268</created>
@@ -191,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639668797268</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="学习从0开始搭建一个项目，创建pojo模型的bill账单">
+      <created>1639958791192</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639958791192</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,9 +230,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="学习从0开始搭建一个项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习从0开始搭建一个项目" />
+    <MESSAGE value="学习从0开始搭建一个项目，创建pojo模型的bill账单" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习从0开始搭建一个项目，创建pojo模型的bill账单" />
   </component>
 </project>
