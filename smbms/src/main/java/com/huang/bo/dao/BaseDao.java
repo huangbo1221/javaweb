@@ -83,4 +83,45 @@ public class BaseDao {
         int updateRes = preparedStatement.executeUpdate();
         return updateRes;
     }
+
+    // 编写公共资源释放类
+    public static boolean CloseResources(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet) {
+        boolean flag = true;
+        if (resultSet != null) {
+            try {
+                resultSet.close();
+                // 关闭后置为null，便于GC回收
+                resultSet = null;
+            } catch (SQLException e) {
+                e.printStackTrace();
+                // 关闭失败
+                flag = false;
+            }
+        }
+
+        if (preparedStatement != null) {
+            try {
+                preparedStatement.close();
+                // 关闭后置为null，便于GC回收
+                preparedStatement = null;
+            } catch (SQLException e) {
+                e.printStackTrace();
+                // 关闭失败
+                flag = false;
+            }
+        }
+
+        if (connection != null) {
+            try {
+                connection.close();
+                // 关闭后置为null，便于GC回收
+                connection = null;
+            } catch (SQLException e) {
+                e.printStackTrace();
+                // 关闭失败
+                flag = false;
+            }
+        }
+        return flag;
+    }
 }

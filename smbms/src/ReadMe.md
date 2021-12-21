@@ -10,3 +10,13 @@
 
 6、编写实体类
 ORM映射：表-类映射
+
+7、编写基础公共类
+* 数据库配置文件
+  db.properties
+* 编写数据库的公共类
+  BaseDao.java
+* 编写字符编码过滤器
+  CharacterEncodingFilter
+
+8、导入静态资源
