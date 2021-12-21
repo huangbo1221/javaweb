@@ -11,14 +11,17 @@
     Welcome to Tomcat
   </description>
 
-  // 字符编码过滤器
+<!--  字符编码过滤器-->
   <filter>
-    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-name>characterEncodingFilter</filter-name>
     <filter-class>com.huang.bo.filter.CharacterEncodingFilter</filter-class>
   </filter>
   <filter-mapping>
-    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-name>characterEncodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>

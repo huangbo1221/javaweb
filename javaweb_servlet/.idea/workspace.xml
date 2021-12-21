@@ -18,23 +18,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习使用filter过滤器指定未登录用户不能访问核心页面的例子">
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.len" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.values" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.values.at" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat.values.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat_i" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/entities/entities.dat_i.len" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/.idea/dataSources/4d786f7d-1b8a-4bb9-9b04-6bf9b89db9fe/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/src/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../smbms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smbms/src/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/src/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smbms/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smbms/target/smbms-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/target/smbms-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +80,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../smbms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -405,6 +394,7 @@
       <workItem from="1639405396591" duration="12213000" />
       <workItem from="1639667564744" duration="1401000" />
       <workItem from="1640008322051" duration="96000" />
+      <workItem from="1640130619954" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>

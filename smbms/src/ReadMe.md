@@ -1,4 +1,4 @@
-# 项目搭建
+# 项目搭建准备工作
 1、搭建一个maven web项目
 2、配置Tomcat
 3、测试项目是否能够跑起来
@@ -20,3 +20,16 @@ ORM映射：表-类映射
   CharacterEncodingFilter
 
 8、导入静态资源
+
+# 登录实现
+具体流程如下：
+
+![img_1.png](img_1.png)
+
+1、编写前端页面
+2、设置首页
+```xml
+<welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+```
