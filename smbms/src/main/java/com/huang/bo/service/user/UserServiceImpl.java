@@ -1,6 +1,13 @@
 package com.huang.bo.service.user;
 
+import com.huang.bo.dao.BaseDao;
+import com.huang.bo.dao.user.UserDao;
+import com.huang.bo.dao.user.UserDaoImpl;
 import com.huang.bo.pojo.User;
+import org.junit.Test;
+
+import java.sql.Connection;
+import java.util.Objects;
 
 /**
  * @ClassName UserServiceImpl
@@ -10,7 +17,40 @@ import com.huang.bo.pojo.User;
  * @Version 1.0
  */
 public class UserServiceImpl implements UserService{
+
+    // 业务层到会调用dao层，所以我们要引用dao层
+
+    private UserDao userDao;
+
+    public UserServiceImpl() {
+        userDao = new UserDaoImpl();
+    }
+
     public User Login(String userCode, String password) {
-        return null;
+        Connection connection = null;
+        User user = null;
+        try {
+            connection = BaseDao.getConnection();
+            // 通过业务层调用对应的具体的数据库操作
+            user = userDao.getLoginUser(connection, userCode);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            // 其实在dao层已经关闭资源了
+            BaseDao.CloseResources(connection, null, null);
+        }
+
+        return user;
+    }
+
+    @Test
+    public void test() {
+        UserServiceImpl userService = new UserServiceImpl();
+        User admin = userService.Login("admin", "123456");
+        if (Objects.nonNull(admin)) {
+            System.out.println(admin.getUserPassword());
+        } else {
+            System.out.println("admin is null!");
+        }
     }
 }

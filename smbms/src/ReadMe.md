@@ -38,3 +38,11 @@ ORM映射：表-类映射
 com.huang.bo.dao.user.UserDaoImpl.getLoginUser
 ```
 4、编写dao接口的实现类
+
+5、业务层接口
+
+6、业务层实现类
+
+7、编写servlet
+
+8、注册servlet

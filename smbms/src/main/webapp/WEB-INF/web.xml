@@ -11,6 +11,15 @@
     Welcome to Tomcat
   </description>
 
+  <servlet>
+    <servlet-name>loginservlet</servlet-name>
+    <servlet-class>com.huang.bo.servlet.user.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+  
 <!--  字符编码过滤器-->
   <filter>
     <filter-name>characterEncodingFilter</filter-name>

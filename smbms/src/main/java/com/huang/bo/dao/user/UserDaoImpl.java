@@ -62,6 +62,6 @@ public class UserDaoImpl implements UserDao {
         } finally {
             BaseDao.CloseResources(connection, preparedStatement, rs);
         }
-        return null;
+        return user;
     }
 }
