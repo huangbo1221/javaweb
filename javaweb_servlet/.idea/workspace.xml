@@ -18,12 +18,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74abfedd-6f63-4c08-8267-6db094e94ec1" name="Changes" comment="学习使用filter过滤器指定未登录用户不能访问核心页面的例子">
-      <change afterPath="$PROJECT_DIR$/../smbms/src/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../smbms/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smbms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smbms/src/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/src/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smbms/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../smbms/target/smbms-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/target/smbms-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/src/main/java/com/huang/bo/dao/user/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/src/main/java/com/huang/bo/dao/user/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/target/classes/com/huang/bo/dao/BaseDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/target/classes/com/huang/bo/filter/CharacterEncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/target/classes/com/huang/bo/pojo/Bill.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/target/classes/com/huang/bo/pojo/Provider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/target/classes/com/huang/bo/pojo/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/target/classes/com/huang/bo/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../smbms/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smbms/target/smbms-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../smbms/target/smbms-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -394,7 +398,7 @@
       <workItem from="1639405396591" duration="12213000" />
       <workItem from="1639667564744" duration="1401000" />
       <workItem from="1640008322051" duration="96000" />
-      <workItem from="1640130619954" duration="336000" />
+      <workItem from="1640130619954" duration="739000" />
     </task>
     <task id="LOCAL-00001" summary="初识servlet">
       <created>1638459217059</created>

@@ -33,3 +33,8 @@ ORM映射：表-类映射
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
 ```
+3、编写dao层得到用户登录的接口
+```java
+com.huang.bo.dao.user.UserDaoImpl.getLoginUser
+```
+4、编写dao接口的实现类

@@ -61,14 +61,14 @@ public class BaseDao {
     }
 
     // 编写查询公共方法
-    public static ResultSet executeQuery(Connection connection, String sql, Object[] params) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    public static ResultSet executeQuery(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet, String sql, Object[] params) throws SQLException {
+        preparedStatement = connection.prepareStatement(sql);
 
         for (int i = 0; i < params.length; i++) {
             // setObject的index从1开始
             preparedStatement.setObject(i+1, params[i]);
         }
-        ResultSet resultSet = preparedStatement.executeQuery();
+        resultSet = preparedStatement.executeQuery();
         return resultSet;
     }
 
