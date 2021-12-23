@@ -46,3 +46,12 @@ com.huang.bo.dao.user.UserDaoImpl.getLoginUser
 7、编写servlet
 
 8、注册servlet
+
+# 登录功能优化
+1、实现注销功能
+思路：移除session，返回登录页面
+
+# 登录拦截优化
+只是像上面移除session，退出登录时从session移除用户信息后还可以登录，必须
+设置拦截器
+比如直接访问：http://localhost:8080/smbms/jsp/frame.jsp就可以登录（未设置拦截器之前）
