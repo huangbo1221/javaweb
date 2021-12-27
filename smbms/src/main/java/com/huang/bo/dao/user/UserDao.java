@@ -13,6 +13,10 @@ import java.sql.Connection;
  */
 public interface UserDao {
 
+    // 查询接口
     public User getLoginUser(Connection connection, String userCode);
+
+    // 更细密码接口
+    public int updatePwd(Connection connection, int id, String password);
 
 }

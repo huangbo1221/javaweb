@@ -55,3 +55,11 @@ com.huang.bo.dao.user.UserDaoImpl.getLoginUser
 只是像上面移除session，退出登录时从session移除用户信息后还可以登录，必须
 设置拦截器
 比如直接访问：http://localhost:8080/smbms/jsp/frame.jsp就可以登录（未设置拦截器之前）
+
+# 密码修改
+1、导入前端素材
+```java
+<li><a href="${pageContext.request.contextPath }/jsp/pwdmodify.jsp">密码修改</a></li>
+```
+
+2、写项目，建议从底层向上开始写

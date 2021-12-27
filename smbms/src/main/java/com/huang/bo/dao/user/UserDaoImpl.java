@@ -2,13 +2,12 @@ package com.huang.bo.dao.user;
 
 import com.huang.bo.dao.BaseDao;
 import com.huang.bo.pojo.User;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.Objects;
 
 /**
  * @ClassName UserDaoImpl
@@ -63,5 +62,34 @@ public class UserDaoImpl implements UserDao {
             BaseDao.CloseResources(connection, preparedStatement, rs);
         }
         return user;
+    }
+
+    @Override
+    public int updatePwd(Connection connection, int id, String password) {
+        if (Objects.isNull(connection)) {
+            logger.info("connection is null!");
+            return -1;
+        }
+
+        String sql = "update smbms_user set userPassword = ? where id = ?";
+        PreparedStatement preparedStatement = null;
+        Object[] params = {password, id};
+        int result = 0;
+        try {
+            result = BaseDao.executeUpdate(connection, preparedStatement, sql, params);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            BaseDao.CloseResources(connection, preparedStatement, null);
+        }
+        return result;
+    }
+
+    @Test
+    public void test() {
+        Connection connection = BaseDao.getConnection();
+        UserDaoImpl userDao = new UserDaoImpl();
+        int i = userDao.updatePwd(connection, 1, "123456");
+        System.out.println(i);
     }
 }

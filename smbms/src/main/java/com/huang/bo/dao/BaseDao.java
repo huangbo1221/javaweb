@@ -73,8 +73,8 @@ public class BaseDao {
     }
 
     // 编写增删改公共方法
-    public static int executeUpdate(Connection connection, String sql, Object[] params) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    public static int executeUpdate(Connection connection, PreparedStatement preparedStatement,  String sql, Object[] params) throws SQLException {
+        preparedStatement = connection.prepareStatement(sql);
 
         for (int i = 0; i < params.length; i++) {
             // setObject的index从1开始
