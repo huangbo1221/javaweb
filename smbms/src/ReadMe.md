@@ -63,3 +63,11 @@ com.huang.bo.dao.user.UserDaoImpl.getLoginUser
 ```
 
 2、写项目，建议从底层向上开始写
+
+3、UserDao接口
+
+4、UserDao实现类
+
+5、UserServivce层
+
+6、UserServivce实现类

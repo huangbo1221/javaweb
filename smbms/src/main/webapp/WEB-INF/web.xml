@@ -28,6 +28,14 @@
     <servlet-name>logoutservlet</servlet-name>
     <url-pattern>/jsp/logout.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>userservlet</servlet-name>
+    <servlet-class>com.huang.bo.servlet.user.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userservlet</servlet-name>
+    <url-pattern>/jsp/user.do</url-pattern>
+  </servlet-mapping>
   
 <!--  字符编码过滤器-->
   <filter>

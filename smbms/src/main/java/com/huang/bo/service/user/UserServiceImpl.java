@@ -5,6 +5,8 @@ import com.huang.bo.dao.user.UserDao;
 import com.huang.bo.dao.user.UserDaoImpl;
 import com.huang.bo.pojo.User;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.util.Objects;
@@ -17,6 +19,8 @@ import java.util.Objects;
  * @Version 1.0
  */
 public class UserServiceImpl implements UserService{
+
+    public static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     // 业务层到会调用dao层，所以我们要引用dao层
 
@@ -41,6 +45,28 @@ public class UserServiceImpl implements UserService{
         }
 
         return user;
+    }
+
+    @Override
+    public boolean updatePwd(int id, String pwd) {
+        logger.info("enter UserServiceImpl updatePwd method!");
+        Connection connection = null;
+        connection = BaseDao.getConnection();
+
+        boolean flag = false;
+        try {
+            int i = userDao.updatePwd(connection, id, pwd);
+            if (i > 0) {
+                flag = true;
+            }
+        } catch (Exception e) {
+            logger.error("UserServiceImpl updatePwd method error!", e);
+            e.printStackTrace();
+        } finally {
+            BaseDao.CloseResources(connection, null, null);
+        }
+
+        return flag;
     }
 
     @Test

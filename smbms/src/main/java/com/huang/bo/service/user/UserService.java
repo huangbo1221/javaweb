@@ -11,4 +11,6 @@ import com.huang.bo.pojo.User;
  */
 public interface UserService {
     public User Login(String userCode, String password);
+
+    public boolean updatePwd(int id, String pwd);
 }
