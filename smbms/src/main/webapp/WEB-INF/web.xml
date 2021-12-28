@@ -59,4 +59,9 @@
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
+
+  // 设置默认session过期时间，默认30分钟
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
 </web-app>

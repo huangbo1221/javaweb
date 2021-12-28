@@ -71,3 +71,5 @@ com.huang.bo.dao.user.UserDaoImpl.getLoginUser
 5、UserServivce层
 
 6、UserServivce实现类
+
+# 优化密码修改使用ajax
