@@ -73,3 +73,38 @@ com.huang.bo.dao.user.UserDaoImpl.getLoginUser
 6、UserServivce实现类
 
 # 优化密码修改使用ajax
+```js
+// 当光标的焦点不在“旧密码”输入框时
+oldpassword.on("blur", function () {
+        $.ajax({
+            type: "GET",
+            url: path + "/jsp/user.do",
+            data: {method: "pwdmodify", oldpassword: oldpassword.val()}, //ajax传递的参数
+            dataType: "json",
+            success: function (data) {
+                if (data.result == "true") {//旧密码正确
+                    validateTip(oldpassword.next(), {"color": "green"}, imgYes, true);
+                } else if (data.result == "false") {//旧密码输入不正确
+                    validateTip(oldpassword.next(), {"color": "red"}, imgNo + " 原密码输入不正确", false);
+                } else if (data.result == "sessionerror") {//当前用户session过期，请重新登录
+                    validateTip(oldpassword.next(), {"color": "red"}, imgNo + " 当前用户session过期，请重新登录", false);
+                } else if (data.result == "error") {//旧密码输入为空
+                    validateTip(oldpassword.next(), {"color": "red"}, imgNo + " 请输入旧密码", false);
+                }
+            },
+            error: function (data) {
+                //请求出错
+                validateTip(oldpassword.next(), {"color": "red"}, imgNo + " 请求错误", false);
+            }
+        });
+```
+
+# 用户管理实现
+思路：
+
+![img_2.png](img_2.png)
+
+1、UserDao
+2、UserDaoImpl
+3、UserService
+4、UserServiceImpl

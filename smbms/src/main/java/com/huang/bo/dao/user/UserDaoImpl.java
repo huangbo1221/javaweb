@@ -2,11 +2,13 @@ package com.huang.bo.dao.user;
 
 import com.huang.bo.dao.BaseDao;
 import com.huang.bo.pojo.User;
+import com.mysql.cj.util.StringUtils;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Objects;
 
 /**
@@ -85,11 +87,58 @@ public class UserDaoImpl implements UserDao {
         return result;
     }
 
+    @Override
+    public int queryAllUsers(Connection connection, String userName, int userRole) {
+        if (Objects.isNull(connection)) {
+            logger.info("queryAllUsers method, connection is null!");
+            return 0;
+        }
+
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+
+        ArrayList<Object> objects = new ArrayList<>();
+
+        StringBuilder sql = new StringBuilder();
+        sql.append("select count(1) as count from smbms_user u, smbms_role r where u.userRole = r.id");
+        if (!StringUtils.isNullOrEmpty(userName)) {
+            sql.append(" and u.userName like ?");
+            objects.add("%" + userName + "%");
+        }
+        if (userRole > 0) {
+            sql.append(" and r.id = ?");
+            objects.add(userRole);
+        }
+        Object[] params = objects.toArray();
+
+        int count = 0;
+        try {
+            resultSet = BaseDao.executeQuery(connection, preparedStatement, resultSet, sql.toString(), params);
+            if (resultSet.next()) {
+                count = resultSet.getInt("count");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // 这里没有关闭connection，是因为connection要在业务层关闭，处理事务？
+            BaseDao.CloseResources(null, preparedStatement, resultSet);
+        }
+        return count;
+    }
+
     @Test
     public void test() {
         Connection connection = BaseDao.getConnection();
         UserDaoImpl userDao = new UserDaoImpl();
         int i = userDao.updatePwd(connection, 1, "123456");
+        System.out.println(i);
+    }
+
+    @Test
+    public void testQueryAllUsers() {
+        Connection connection = BaseDao.getConnection();
+        UserDaoImpl userDao = new UserDaoImpl();
+        int i = userDao.queryAllUsers(connection, "李明", 0);
         System.out.println(i);
     }
 }

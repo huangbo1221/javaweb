@@ -19,4 +19,7 @@ public interface UserDao {
     // 更细密码接口
     public int updatePwd(Connection connection, int id, String password);
 
+    // 根据用户名模糊查询所有用户或者根据用户角色查询用户
+    public int queryAllUsers(Connection connection, String userName, int userRole);
+
 }
