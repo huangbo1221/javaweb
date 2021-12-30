@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -88,7 +89,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public int queryAllUsers(Connection connection, String userName, int userRole) {
+    public int getUserCount(Connection connection, String userName, int userRole) {
         if (Objects.isNull(connection)) {
             logger.info("queryAllUsers method, connection is null!");
             return 0;
@@ -126,6 +127,57 @@ public class UserDaoImpl implements UserDao {
         return count;
     }
 
+    @Override
+    public List<User> getUserList(Connection connection, String userName, int userRole, int currentPageNo, int pageSize) {
+        PreparedStatement pstm = null;
+        ResultSet rs = null;
+        List<User> userList = new ArrayList<User>();
+        if (Objects.isNull(connection)) {
+            logger.info("getUserList method, connection is null!");
+            return userList;
+        }
+        StringBuffer sql = new StringBuffer();
+        sql.append("select u.*,r.roleName as userRoleName from smbms_user u,smbms_role r where u.userRole = r.id");
+        List<Object> list = new ArrayList<Object>();
+        if (!StringUtils.isNullOrEmpty(userName)) {
+            sql.append(" and u.userName like ?");
+            list.add("%" + userName + "%");
+        }
+        if (userRole > 0) {
+            sql.append(" and u.userRole = ?");
+            list.add(userRole);
+        }
+        //在mysql数据库中，分页使用 limit startIndex，pageSize ; 总数
+        sql.append(" order by creationDate DESC limit ?,?");
+        currentPageNo = (currentPageNo - 1) * pageSize;
+        list.add(currentPageNo);
+        list.add(pageSize);
+
+        Object[] params = list.toArray();
+        System.out.println("sql ----> " + sql.toString());
+        try {
+            rs = BaseDao.executeQuery(connection, pstm, rs, sql.toString(), params);
+            while (rs.next()) {
+                User user = new User();
+                user.setId(rs.getInt("id"));
+                user.setUserCode(rs.getString("userCode"));
+                user.setUserName(rs.getString("userName"));
+                user.setGender(rs.getInt("gender"));
+                user.setBirthday(rs.getDate("birthday"));
+                user.setPhone(rs.getString("phone"));
+                user.setUserRole(rs.getInt("userRole"));
+                user.setUserRoleName(rs.getString("userRoleName"));
+                userList.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            BaseDao.CloseResources(null, pstm, rs);
+        }
+
+        return userList;
+    }
+
     @Test
     public void test() {
         Connection connection = BaseDao.getConnection();
@@ -138,7 +190,7 @@ public class UserDaoImpl implements UserDao {
     public void testQueryAllUsers() {
         Connection connection = BaseDao.getConnection();
         UserDaoImpl userDao = new UserDaoImpl();
-        int i = userDao.queryAllUsers(connection, "李明", 0);
+        int i = userDao.getUserCount(connection, "李明", 0);
         System.out.println(i);
     }
 }

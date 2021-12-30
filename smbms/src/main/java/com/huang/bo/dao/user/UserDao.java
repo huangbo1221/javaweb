@@ -3,6 +3,7 @@ package com.huang.bo.dao.user;
 import com.huang.bo.pojo.User;
 
 import java.sql.Connection;
+import java.util.List;
 
 /**
  * @ClassName UserDao
@@ -20,6 +21,8 @@ public interface UserDao {
     public int updatePwd(Connection connection, int id, String password);
 
     // 根据用户名模糊查询所有用户或者根据用户角色查询用户
-    public int queryAllUsers(Connection connection, String userName, int userRole);
+    public int getUserCount(Connection connection, String userName, int userRole);
 
+    // 通过条件来查询所有用户列表
+    List<User> getUserList(Connection connection, String userName, int userRole, int currentPageNo, int pageSize);
 }

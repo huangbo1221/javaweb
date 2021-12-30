@@ -40,4 +40,5 @@ public class User {
 
     private Date modifyDate;
 
+    private String userRoleName;
 }

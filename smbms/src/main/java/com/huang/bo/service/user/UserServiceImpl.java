@@ -69,6 +69,22 @@ public class UserServiceImpl implements UserService{
         return flag;
     }
 
+    @Override
+    public int getUserCount(String userName, int userRole) {
+
+        Connection connection = BaseDao.getConnection();
+        UserDao userDao = new UserDaoImpl();
+        int userCount = 0;
+        try {
+            userCount = userDao.getUserCount(connection, userName, userRole);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            BaseDao.CloseResources(connection, null, null);
+        }
+        return userCount;
+    }
+
     @Test
     public void test() {
         UserServiceImpl userService = new UserServiceImpl();
