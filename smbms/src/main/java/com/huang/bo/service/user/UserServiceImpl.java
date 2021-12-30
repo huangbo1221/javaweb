@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -83,6 +84,21 @@ public class UserServiceImpl implements UserService{
             BaseDao.CloseResources(connection, null, null);
         }
         return userCount;
+    }
+
+    @Override
+    public List<User> getUserList(String queryUserName, int queryUserRole, int currentPageNo, int pageSize) {
+        Connection connection = null;
+        List<User> userList = null;
+        try {
+            connection = BaseDao.getConnection();
+            userList = userDao.getUserList(connection, queryUserName, queryUserRole, currentPageNo, pageSize);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            BaseDao.CloseResources(connection, null, null);
+        }
+        return userList;
     }
 
     @Test

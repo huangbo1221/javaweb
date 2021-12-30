@@ -2,6 +2,8 @@ package com.huang.bo.service.user;
 
 import com.huang.bo.pojo.User;
 
+import java.util.List;
+
 /**
  * @ClassName UserService
  * @Description TODO
@@ -15,4 +17,6 @@ public interface UserService {
     public boolean updatePwd(int id, String pwd);
 
     public int getUserCount(String userName, int userRole);
+
+    public List<User> getUserList(String queryUserName, int queryUserRole, int currentPageNo, int pageSize);
 }
