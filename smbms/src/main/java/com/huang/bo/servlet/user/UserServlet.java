@@ -1,10 +1,14 @@
 package com.huang.bo.servlet.user;
 
 import com.alibaba.fastjson.JSONArray;
+import com.huang.bo.pojo.Role;
 import com.huang.bo.pojo.User;
+import com.huang.bo.service.role.RoleService;
+import com.huang.bo.service.role.RoleServiceImpl;
 import com.huang.bo.service.user.UserService;
 import com.huang.bo.service.user.UserServiceImpl;
 import com.huang.bo.utils.Constants;
+import com.huang.bo.utils.PageSupport;
 import com.mysql.cj.util.StringUtils;
 
 import javax.servlet.ServletException;
@@ -14,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
@@ -32,6 +37,8 @@ public class UserServlet extends HttpServlet {
             updatePwd(req, resp);
         } else if (!StringUtils.isNullOrEmpty(method) && "pwdmodify".equals(method)) {
             modifyPwd(req, resp);
+        } else if (!StringUtils.isNullOrEmpty(method) && "query".equals(method)) {
+            query(req, resp);
         }
     }
 
@@ -99,5 +106,71 @@ public class UserServlet extends HttpServlet {
         } finally {
             writer.close();
         }
+    }
+
+    private void query(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // 查询用户列表
+        // 从前端获取数据
+        String queryUserName = request.getParameter("queryname");
+        String temp = request.getParameter("queryUserRole");
+        String pageIndex = request.getParameter("pageIndex");
+        int queryUserRole = 0;
+        UserService userService = new UserServiceImpl();
+        List<User> userList = null;
+        //第一次走这个请求，一定是第一页，页面大小是固定的
+        //设置页面容量
+        int pageSize = Constants.pageSize;
+        //默认当前页码
+        int currentPageNo = 1;
+
+        if (queryUserName == null) {
+            queryUserName = "";
+        }
+        if (temp != null && !temp.equals("")) {
+            queryUserRole = Integer.parseInt(temp);
+        }
+
+        if (pageIndex != null) {
+            try {
+                currentPageNo = Integer.valueOf(pageIndex);
+            } catch (NumberFormatException e) {
+                response.sendRedirect("error.jsp");
+            }
+        }
+        //总数量（表）
+        int totalCount = userService.getUserCount(queryUserName, queryUserRole);
+        //总页数
+        PageSupport pages = new PageSupport();
+        pages.setCurrentPageNo(currentPageNo);  //当前页
+        pages.setPageSize(pageSize);            //页面大小
+        pages.setTotalCount(totalCount);        //总数量
+
+        int totalPageCount = pages.getTotalPageCount();  //总页面数量
+
+        //控制首页和尾页
+        //如果页面小于第一页，就显示第一页
+        if (currentPageNo < 1) {
+            currentPageNo = 1;
+            //如果当前页面大于最后一页，当前页等于最后一页即可
+        } else if (currentPageNo > totalPageCount) {
+            currentPageNo = totalPageCount;
+        }
+
+        //获取用户列表展示
+        userList = userService.getUserList(queryUserName, queryUserRole, currentPageNo, pageSize);
+        request.setAttribute("userList", userList);
+        //获取角色列表
+        List<Role> roleList = null;
+        RoleService roleService = new RoleServiceImpl();
+        roleList = roleService.getRoleList();
+        request.setAttribute("roleList", roleList);
+
+        request.setAttribute("queryUserName", queryUserName);
+        request.setAttribute("queryUserRole", queryUserRole);
+        request.setAttribute("totalPageCount", totalPageCount);
+        request.setAttribute("totalCount", totalCount);
+        request.setAttribute("currentPageNo", currentPageNo);
+
+        request.getRequestDispatcher("userlist.jsp").forward(request, response);
     }
 }

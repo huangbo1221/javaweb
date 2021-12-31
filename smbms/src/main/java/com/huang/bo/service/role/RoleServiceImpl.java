@@ -4,6 +4,7 @@ import com.huang.bo.dao.BaseDao;
 import com.huang.bo.dao.role.RoleDao;
 import com.huang.bo.dao.role.RoleDaoImpl;
 import com.huang.bo.pojo.Role;
+import org.junit.Test;
 
 import java.sql.Connection;
 import java.util.List;
@@ -34,5 +35,12 @@ public class RoleServiceImpl implements RoleService{
             BaseDao.CloseResources(connection, null, null);
         }
         return roleList;
+    }
+
+    @Test
+    public void test() {
+        RoleService roleService = new RoleServiceImpl();
+        List<Role> roleList = roleService.getRoleList();
+        System.out.println(roleList.size());
     }
 }

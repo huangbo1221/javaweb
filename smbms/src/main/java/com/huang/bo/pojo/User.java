@@ -41,4 +41,12 @@ public class User {
     private Date modifyDate;
 
     private String userRoleName;
+
+    private Integer age;//年龄
+
+    public Integer getAge() {
+        Date date = new Date();
+        Integer age = date.getYear() - birthday.getYear();
+        return age;
+    }
 }

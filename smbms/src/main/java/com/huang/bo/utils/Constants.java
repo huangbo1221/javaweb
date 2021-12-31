@@ -9,4 +9,6 @@ package com.huang.bo.utils;
  */
 public class Constants {
     public static final String USER_SESSION = "user_session";
+
+    public final static int pageSize = 5;
 }
