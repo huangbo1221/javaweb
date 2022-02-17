@@ -1,12 +1,15 @@
 # cookie和session
 一个网站，怎么证明你来过？
+
 客户端   服务端
+
 1、服务端给客户端一个“信件”，客户端下次访问服务端带上“信件”就可以了。 cookie
+
 2、服务器登记你来过了，下次你来的时候服务器来匹配你。 session
 
 ## 保存会话的两种技术
 cookie：
-* 客户端技术（相应、请求）
+* 客户端技术（响应、请求）
 
 ![img_17.png](img_17.png)
 
@@ -19,7 +22,8 @@ session：
 
 ## cookie
 1、从请求中拿到cookie信息；
-2、服务器相应给客户端cookie。
+
+2、服务器响应给客户端cookie。
 
 在CookieDemoServlet的例子中，当第一在浏览器执行http://localhost:8080/s5/cookie1时，
 效果如下：
